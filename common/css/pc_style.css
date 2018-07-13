@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*all
+-------------------------------------------------*/
+body{
+	width: 710px;
+	padding: 8px;
+	margin: auto;
+    font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+}
+
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+    font-size: 18px;
+}
+li{
+    list-style: none;
+}
+
+main{
+        width: 710px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+    
+section{
+    background-image: url(/common/images/back_color.png);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    padding: 20px 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background: #fff;
+    z-index: -1;
+    margin: 10px;
+}
+
+.second .text-column{
+    order: 2;
+}
+.second .inm-column{
+    order: 1;
+}
+.second .btn{
+    order: 4;
+}
+
+/*
+section{
+    width: 650px;
+    margin: auto;
+    margin-bottom: 30px;
+	padding: 10px;
+    background-image: url(img/back-pink.png);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+*/
+.title{
+    width: 100%;
+	background-color: #ff7d73;
+	padding: 5px;
+    margin-bottom: 10px;
+	border-radius: 4px;
+    box-sizing: border-box;
+}
+.title a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-left: 5px solid #ffe073;
+    text-indent: 10px;
+    line-height: 24px;
+}
+.title a:hover{
+	text-decoration: underline;
+}
+/*-----------------------------------*/
+.text-column{
+	width: 380px;
+}
+
+.price{
+	margin-bottom: 10px;
+    text-align: right;
+}
+.price span{
+	color: #FF0004;
+    font-size: 30px;
+}
+.price span span{
+    font-size: 16px;
+}
+.info{
+    font-size: 11px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.ptext{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.ptext dt{
+    width: 70px;
+    background-color: #ff7d73;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ptext dd{
+    width: 302px;
+    background-color: #fff0b9;
+    color: #ff7d73;
+    padding: 5px 0 5px 8px;
+    line-height: 20px;
+}
+
+li{
+    font-size: 13px;
+    line-height: 17px;
+    padding-left: 13px;
+	margin-bottom: 20px;
+    list-style: none;
+    position: relative;
+    background: url(/common/images/circle.png) no-repeat;
+    background-position: left top 3px;
+    background-size: 8px 8px;
+    vertical-align: 19px;
+}
+li:last-child{
+    margin-bottom: 0;
+}
+/*----------------------------------*/
+.img-column{
+	width: 240px;
+}
+.img-column img{
+    box-sizing: border-box;
+    border: 1px solid #ff7d73;
+}
+/*----------------------------------*/
+.btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+.btn a{
+    width: 240px;
+    margin: 0 auto;
+    padding: 11px 0;
+    background: url(/common/images/btn_on.png) no-repeat;
+    background-size: contain;
+    font-size: 18px;
+    display: block;
+    font-weight: bold;    
+}
+.btn a:hover{
+    opacity: .7;
+}
+
+/*トップへボタン
+---------------------------------------------*/
+.backtop{
+    width: 30px;
+    height: 30px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+    margin-left: 305px;
+    z-index: 100;
+}
+
+header{
+    width: 710px;
+    margin-bottom: 15px;
+}
