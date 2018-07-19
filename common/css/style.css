@@ -246,7 +246,7 @@ li {
   margin-top: 11px;
   padding-left: 3.33%;
   font-size: 11px;
-  background: url(/common/images/circle.png) no-repeat;
+  background: url(../images/circle.png) no-repeat;
   background-position: top 3px left;
   background-size: 8px 8px;
   line-height: 16.5px;
@@ -266,7 +266,7 @@ li {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  background: url(/common/images/btn_on.png) no-repeat;
+  background: url(../images/btn_on.png) no-repeat;
   background-size: contain;
   background-position: center;
   display: block;
